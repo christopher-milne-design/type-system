@@ -13,9 +13,6 @@ const IndexPage = () => (
 export default IndexPage
 
 const Wrapper = styled.div`
-width: 100%;
-  height: 100%;
-  background: #090B37;
 `
 
 const Title = styled.h1`
