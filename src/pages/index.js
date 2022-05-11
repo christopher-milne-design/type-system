@@ -1,5 +1,6 @@
 import * as React from "react"
 import styled from "styled-components"
+import layout from "../components/layout"
 
 const IndexPage = () => (
   <Wrapper>
