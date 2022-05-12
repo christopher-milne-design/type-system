@@ -1,48 +1,79 @@
 import * as React from "react"
 import styled from "styled-components"
+import layout from "../components/layout"
 
 const IndexPage = () => (
   <Wrapper>
-    <Logo src="/images/logos/react-logo.svg" alt="logo" />
-    <Title>Build a web app</Title>
-    <Caption>20 sections!</Caption>
-    <Description>Learn how we build.</Description>
+    <CardWrapper>
+      <Card>
+        <Title>H1</Title>
+        <Title2>H2</Title2>
+      </Card>
+      <Card>
+        <Title>H1</Title>
+        <Title2>H2</Title2>
+      </Card>
+      <Button>
+        <a href="/page-2">lick me</a>
+      </Button>
+    </CardWrapper>
   </Wrapper>
 )
 
 export default IndexPage
 
 const Wrapper = styled.div`
-  height: 1247px;
-  background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7 98.38%);
+  align-items: center;
+  max-width: 1040px;
 `
-const Logo = styled.img`
-  width: 60px;
-  height: 60px;
-`
+
 const Title = styled.h1`
   max-width: 500px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 60px;
   line-height: 72px;
-  color: #ffffff;
+  color: #000000;
   mix-blend-mode: normal;
   text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
 `
 
-const Caption = styled.p`
+const Title2 = styled.h2`
+  max-width: 500px;
   font-style: normal;
-  font-size: 15px;
-  line-height: 130%;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 72px;
+  color: #000000;
+  mix-blend-mode: normal;
+  text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
 `
-
-const Description = styled.p`
+const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
   max-width: 400px;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 140%;
-  color: #ffffff;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+`
+const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  margin-top: 124px;
+  align-items: center;
+`
+const Button = styled.div`
+  background-color: white;
+  padding: 24px;
+  border-radius: 15px;
+
+  :hover {
+    background-color: #ececec;
+  }
 `
