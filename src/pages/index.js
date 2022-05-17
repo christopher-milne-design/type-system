@@ -6,16 +6,14 @@ const IndexPage = () => (
   <Wrapper>
     <CardWrapper>
       <Card>
-        <Title>H1</Title>
-        <Title2>H2</Title2>
+        <Heading1>H1</Heading1>
+        <Heading2>H2</Heading2>
+        <Heading3>H3</Heading3>
       </Card>
-      <Card>
-        <Title>H1</Title>
-        <Title2>H2</Title2>
-      </Card>
-      <Button>
-        <a href="/page-2">lick me</a>
-      </Button>
+
+      <a href="/page-2">
+        <Button>lick me</Button>
+      </a>
     </CardWrapper>
   </Wrapper>
 )
@@ -27,7 +25,7 @@ const Wrapper = styled.div`
   max-width: 1040px;
 `
 
-const Title = styled.h1`
+const Heading1 = styled.h1`
   max-width: 500px;
   font-style: normal;
   font-weight: 600;
@@ -35,10 +33,9 @@ const Title = styled.h1`
   line-height: 72px;
   color: #000000;
   mix-blend-mode: normal;
-  text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
 `
 
-const Title2 = styled.h2`
+const Heading2 = styled.h2`
   max-width: 500px;
   font-style: normal;
   font-weight: 600;
@@ -46,7 +43,15 @@ const Title2 = styled.h2`
   line-height: 72px;
   color: #000000;
   mix-blend-mode: normal;
-  text-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+`
+const Heading3 = styled.h3`
+  max-width: 500px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 72px;
+  color: #000000;
+  mix-blend-mode: normal;
 `
 const Card = styled.div`
   display: flex;
@@ -75,5 +80,7 @@ const Button = styled.div`
 
   :hover {
     background-color: #ececec;
+    box-shadow: 0px 4.09903px 12.2971px 2.04952px rgba(0, 0, 0, 0.01),
+      inset 0px -4.09903px 6.14855px 2.04952px rgba(255, 255, 255, 0.1);
   }
 `
