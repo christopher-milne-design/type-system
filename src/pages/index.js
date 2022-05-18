@@ -1,83 +1,78 @@
 import * as React from "react"
 import styled from "styled-components"
+import Layout from "../components/layout"
 import layout from "../components/layout"
 
 const IndexPage = () => (
-  <Wrapper>
-    <CardWrapper>
-      <a href="/colour">
-        <Button>lick me</Button>
-      </a>
-      <svg height="100" width="100">
-        <circle
-          cx="50"
-          cy="50"
-          r="40"
-          stroke="black"
-          stroke-width="3"
-          fill="red"
-        />
-      </svg>
-    </CardWrapper>
-  </Wrapper>
+  <Layout>
+    <CircleWrapper>
+      <CircleAndText>
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="100" cy="100" r="100" fill="#EF8D8B" />
+        </svg>
+
+        <p>1 42 94</p>
+      </CircleAndText>
+      <CircleAndText>
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="100" cy="100" r="100" fill="#68D98C" />
+        </svg>
+
+        <p>139 52 85</p>
+      </CircleAndText>
+      <CircleAndText>
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="100" cy="100" r="100" fill="#7EA6D9" />
+        </svg>
+
+        <p>213 42 85</p>
+      </CircleAndText>
+    </CircleWrapper>
+  </Layout>
 )
 
 export default IndexPage
 
-const Wrapper = styled.div`
-  align-items: center;
-  max-width: 1040px;
-`
-
-const Heading1 = styled.h1`
-  max-width: 500px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 72px;
-  color: #000000;
-  mix-blend-mode: normal;
-`
-
-const Heading2 = styled.h2`
-  max-width: 500px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 72px;
-  color: #000000;
-  mix-blend-mode: normal;
-`
-const Heading3 = styled.h3`
-  max-width: 500px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 72px;
-  color: #000000;
-  mix-blend-mode: normal;
-`
-const Card = styled.div`
+const CircleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
   gap: 40px;
-  max-width: 400px;
+  max-width: auto;
   height: auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
+  margin: 120px;
 `
-const CardWrapper = styled.div`
+const CircleAndText = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
   padding: 0px;
   gap: 40px;
-  margin-top: 124px;
   align-items: center;
 `
+
 const Button = styled.div`
+  max-width: 80px;
   background-color: white;
   padding: 24px;
   border-radius: 15px;
