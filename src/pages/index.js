@@ -5,15 +5,19 @@ import layout from "../components/layout"
 const IndexPage = () => (
   <Wrapper>
     <CardWrapper>
-      <Card>
-        <Heading1>H1</Heading1>
-        <Heading2>H2</Heading2>
-        <Heading3>H3</Heading3>
-      </Card>
-
-      <a href="/page-2">
+      <a href="/colour">
         <Button>lick me</Button>
       </a>
+      <svg height="100" width="100">
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="black"
+          stroke-width="3"
+          fill="red"
+        />
+      </svg>
     </CardWrapper>
   </Wrapper>
 )

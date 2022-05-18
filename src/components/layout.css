@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
 html,
 body {
-background-color:#090B37;
-},
+  background-color: #090b37;
+  color: white;
+  font-size: 18;
+}
 div,
 span,
 applet,
 object,
 iframe,
 h1,
-h2,
+h2 {
+  font-size: 32px;
+}
 h3,
 h4,
 h5,
