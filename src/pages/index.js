@@ -1,10 +1,11 @@
 import * as React from "react"
 import styled from "styled-components"
+import Greys from "../components/Greys"
 import Layout from "../components/layout"
-import layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
+    <h1>Colours</h1>
     <CircleWrapper>
       <CircleAndText>
         <svg
@@ -46,6 +47,7 @@ const IndexPage = () => (
         <p>213 42 85</p>
       </CircleAndText>
     </CircleWrapper>
+    <Greys />
   </Layout>
 )
 

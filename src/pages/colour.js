@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import layout from "../components/layout"
+import Greys from "../components/greys"
 
 const IndexPage = () => (
   <Layout>
@@ -46,6 +46,7 @@ const IndexPage = () => (
         <p>213 42 85</p>
       </CircleAndText>
     </CircleWrapper>
+    <Greys />
   </Layout>
 )
 
